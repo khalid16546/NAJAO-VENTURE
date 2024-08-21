@@ -1,0 +1,348 @@
+/* google search google fonts, click on Google Fonts, search for the fonts you want on the
+    landing page, click on the fonts, click on Get Font button, click on Get embed code button,
+    check @import, click on copy code button and past it inside the style.css file
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Pacifico&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Tamil', sans-serif;
+
+}
+
+/* home */
+.wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 0;
+}
+.slide {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background-image: url('../background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  background-color: rgba(255, 254, 254, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px 66px;
+}
+.header .logo {
+  font-size: 40px;
+  float: left;
+}
+.header .logo a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Pacifico', cursive;
+}
+.header .menu {
+  float: right;
+}
+.header .menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+.header .menu ul li a {
+  display: block;
+  padding: 10px;
+  color: #0c0a0a;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.slideTitle {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+}
+.slideTitle h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.slideTitle p {
+  font-size: 20px;
+}
+
+/* about */
+.content {
+  padding: 50px 40px;
+  z-index: 0;
+  background-color: #ece9e9;
+}
+.content-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-inline-start: 35px 0;
+  text-transform: capitalize;
+}
+.content-title h2 {
+  font-size: 48px;
+  color: #333;
+  padding: 40px 0 0 0;
+}
+.content-title .border span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #c9c3c3;
+  margin: 0 10px 20px 0;
+  border-radius: 100px;
+}
+p.content-desc {
+  font-size: 18px;
+  color: #393838;
+  max-width: 60%;
+  padding: 5px;
+  margin-left: 20%;
+  display: inline-block;
+  text-align: center;
+}
+.skill-section {
+  display: flex;
+  padding: 55px 0;
+  justify-content: space-between;
+  align-item: center;
+}
+.skill-section .skill-img {
+  width: 50%;
+}
+.skill-section .skill-img img {
+  width: 80%;
+}
+.skill-section .skill-content {
+  margin-top: 30px;
+  width: 45%;
+}
+.skill-content h3.skill-title {
+  font-size: 28px;
+  color: #393838;
+  font-weight: 500;
+  float: left;
+  width: 100%;
+  text-transform: capitalize;
+}
+.skills {
+  width: 100%;
+  float: left;
+  padding-top: 15px;
+  text-transform: capitalize;
+}
+.skills i {
+  color: #393838;
+  float: left;
+  clear: both;
+}
+.skills span {
+  width: 100%;
+  height: 25px;
+  border: 1px solid #948a8a;
+  display: inline-block;
+  margin-top: 7px;
+}
+.skills span abbr {
+  display: inline-block;
+  width: 70%;
+  height: 25px;
+  background-color: #948a8a;
+}
+.skills.efficiency span abbr {
+  width: 94%;
+}
+.skills.effectiveness span abbr {
+  width: 85%;
+}
+.skills.delivery span abbr {
+  width: 100%;
+}
+.skills.experience apan abbr{
+  width: 95%;
+}
+
+/* services */
+.services {
+  background-color: #948a8a;
+}
+.service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #ece7e7;
+}
+.column.col2 {
+  margin: 0 4%;
+}
+.column p {
+  padding-top: 10px;
+}
+/*team*/
+.ourteam{
+  background-color: #f3f3ed;
+
+}
+.team{
+  padding: 20px 40px;
+
+}
+.employer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+.employer-images img{
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 40%;
+}
+employer-details,
+image left{
+  margin-left: 30px;
+}
+
+.employer-details h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+.employer-details h4{
+  color: #9aabcf;
+  margin-top: -9px;
+  margin-bottom: 10px;
+
+}
+.employer-details p{
+  font-size: 20px;
+  text-align: justify;
+}
+/*contact*/
+.map{
+  margin: 35px 0 0 0;
+}
+.footer{
+  padding: 50px;
+}
+.footer .icons-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.footer .icons-container .icons i .fas{
+  font-size: 20px;
+  color: #8a8585;
+}
+.footer .icons-container .icons h3{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.footer .share{
+  text-align: center;
+  padding: 30px 0;
+
+}
+.footer .credit{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.footer .credit span:hover{
+  color: #393838;
+}
+.footer .share{
+  text-align: center;
+  padding: 30px 0;
+}
+.footer .share a.fab{
+  color: #645a5a;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 50px;
+}
+@media(max-width: 868px){
+  .ourteam{
+    padding: 0;
+  }
+  .employer{
+    flex-direction: column;
+    align-items: center;
+    .employer-images img {
+      width: 300px;
+      height: 250px;
+      border-radius: 20%;
+    }
+  }
+  .employer-details{
+    margin-left: 0;
+
+  }
+  .employer-details h3{
+    padding: 20px 0 8px 0;
+    font-size: 15px;
+  }
+  .employer-details p{
+    font-size: 15px;
+  }
+}
+@media(max-width: 768px){
+  header .menu ul li a{
+    font-size: 14px;
+  }
+  .content-title h2{
+    font-size: 28px;
+  }
+  .skill-section{
+    flex-direction: column;
+  }
+  .skill-section .skill-img{
+    width: 100%;
+  }
+  .skill-section .skill-content{
+    width: 100%;
+  }
+  .service{
+    flex-wrap: wrap;
+  }
+  .column{
+    padding-top: 25px;
+  }
+ 
+}
+@media(max-width: 668px){
+  .header .logo a {
+    font-size: 20px;
+  }
+  .footer .icon-container .icons i.fas{
+    margin-top: 20px;
+
+  }
+
+}
+@media(max-width:560px){
+  .header .menu ul li a{
+    display: none;
+  }
+}
+
+
+
